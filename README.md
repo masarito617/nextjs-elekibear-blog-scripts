@@ -6,7 +6,7 @@
 * Next.jsで開発、SSGを使用し、静的サイトとして動作します。（Netlifyへのデプロイを想定）
 * WordPressで管理していた記事を移植したため、text記事と現行のMarkdown記事が混在しています。
 
-<img width="600px" src="https://github.com/masarito617/nextjs-elekibear-blog-scripts/assets/77447256/e06ca245-ce9c-4c66-9236-9660df6815d8">
+<img width="600px" src="https://github.com/masarito617/nextjs-elekibear-blog-scripts/assets/77447256/f0fad2be-1c4e-4e46-9cb5-0c26af0afcb4">
 <br><br>
 
 ### 使用方法
