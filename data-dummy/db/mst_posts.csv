@@ -1,0 +1,6 @@
+id,post_type,post_title,post_name,featured_image,post_date,post_modified
+1,post,【テスト】Text記事１,slug001,https://wp-next-elekibear-content.netlify.app/content/_dummy.png,2024-01-01 00:00:00,2024-01-01 00:00:00
+2,post,【テスト】Text記事２,slug002,https://wp-next-elekibear-content.netlify.app/content/_dummy.png,2024-01-02 00:00:00,2024-01-01 00:00:00
+3,post,【テスト】Text記事３,slug003,https://wp-next-elekibear-content.netlify.app/content/_dummy.png,2024-01-03 00:00:00,2024-01-01 00:00:00
+4,post,【テスト】Text記事４,slug004,https://wp-next-elekibear-content.netlify.app/content/_dummy.png,2024-01-04 00:00:00,2024-01-01 00:00:00
+5,post,【テスト】Text記事５,slug005,https://wp-next-elekibear-content.netlify.app/content/_dummy.png,2024-01-05 00:00:00,2024-01-01 00:00:00

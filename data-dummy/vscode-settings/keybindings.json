@@ -1,0 +1,159 @@
+// Place your key bindings in this file to override the defaults
+[
+    // 都会のエレキベア 執筆用カスタム定義
+    // settings.json に "workspaceKeybindings.ElekibearBlogTask.enabled": true を指定すると有効になる
+    {
+      // マイケル
+      "key": "cmd+left",
+      "command": "type",
+      "args": {
+        "text": "```talk:l:m:1\n\n```"
+      },
+      "when": "config.workspaceKeybindings.ElekibearBlogTask.enabled"
+    },
+    {
+      // エレキベア
+      "key": "cmd+right",
+      "command": "type",
+      "args": {
+        "text": "```talk:r:e:1\n\n```"
+      },
+      "when": "config.workspaceKeybindings.ElekibearBlogTask.enabled"
+    },
+    {
+      // ジャギィ
+      "key": "cmd+up",
+      "command": "type",
+      "args": {
+        "text": "```talk:l:j:1\n\n```"
+      },
+      "when": "config.workspaceKeybindings.ElekibearBlogTask.enabled"
+    },
+    {
+      // ゴロヤン
+      "key": "cmd+down",
+      "command": "type",
+      "args": {
+        "text": "```talk:r:g:1\n\n```"
+      },
+      "when": "config.workspaceKeybindings.ElekibearBlogTask.enabled"
+    },
+    {
+      // 記事カード
+      "key": "cmd+1",
+      "command": "type",
+      "args": {
+        "text": "```card\n20231231_01\n```"
+      },
+      "when": "config.workspaceKeybindings.ElekibearBlogTask.enabled"
+    },
+    {
+      // h2
+      "key": "cmd+2",
+      "command": "type",
+      "args": {
+        "text": "## "
+      },
+      "when": "config.workspaceKeybindings.ElekibearBlogTask.enabled"
+    },
+    {
+      // h4
+      "key": "cmd+4",
+      "command": "type",
+      "args": {
+        "text": "#### "
+      },
+      "when": "config.workspaceKeybindings.ElekibearBlogTask.enabled"
+    },
+    {
+      // テーブル
+      "key": "cmd+5",
+      "command": "type",
+      "args": {
+        "text": "```table:eleki-table\n| - | - | - |\n| - | - | - |\n| - | - | - |\n```"
+      },
+      "when": "config.workspaceKeybindings.ElekibearBlogTask.enabled"
+    },
+    {
+      // ポイント欄
+      "key": "cmd+6",
+      "command": "type",
+      "args": {
+        "text": "```point:タイトル\n<ul>\n<li>test</li>\n</ul>\n```"
+      },
+      "when": "config.workspaceKeybindings.ElekibearBlogTask.enabled"
+    },
+    {
+      // 画像
+      "key": "cmd+7",
+      "command": "type",
+      "args": {
+        "text": "![Test{width:600px}](/netlify-contents/uploads/content/Test.png \"Test\")"
+      },
+      "when": "config.workspaceKeybindings.ElekibearBlogTask.enabled"
+    },
+    {
+      // HTMLエスケープ
+      "key": "cmd+8",
+      "command": "type",
+      "args": {
+        "text": "```escape\n\n```"
+      },
+      "when": "config.workspaceKeybindings.ElekibearBlogTask.enabled"
+    },
+    {
+      // 強調
+      "key": "cmd+9",
+      "command": "type",
+      "args": {
+        "text": "<strong></strong>"
+      },
+      "when": "config.workspaceKeybindings.ElekibearBlogTask.enabled"
+    },
+    {
+      // コード
+      "key": "cmd+0",
+      "command": "type",
+      "args": {
+        "text": "```prism:bash:bash\n\n```"
+      },
+      "when": "config.workspaceKeybindings.ElekibearBlogTask.enabled"
+    },
+    {
+      // Amazon商品アイテム
+      "key": "shift+cmd+1",
+      "command": "type",
+      "args": {
+        "text": "<div data-asin-id=\"XXX\">\nAmazonアイテム\n</div>"
+      },
+      "when": "config.workspaceKeybindings.ElekibearBlogTask.enabled"
+    },
+    {
+      // Amazon商品画像リンク
+      "key": "shift+cmd+2",
+      "command": "type",
+      "args": {
+        "text": "<a data-img-link-asin-id=\"XXX\">\nAmazon画像\n</a>"
+      },
+      "when": "config.workspaceKeybindings.ElekibearBlogTask.enabled"
+    },
+    {
+      // 改行
+      "key": "cmd+enter",
+      "command": "type",
+      "args": {
+        "text": "<br>\n"
+      },
+      "when": "config.workspaceKeybindings.ElekibearBlogTask.enabled"
+    },
+    {
+      // 略表記
+      "key": "cmd+r",
+      "command": "type",
+      "args": {
+        "text": "\n・・・略・・・\n"
+      },
+      "when": "config.workspaceKeybindings.ElekibearBlogTask.enabled"
+    }
+  ]
+  

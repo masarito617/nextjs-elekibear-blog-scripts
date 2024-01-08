@@ -1,0 +1,29 @@
+{
+  // eslint設定を読み込む
+  // recommended: 推奨設定
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript"
+  ],
+  "rules": {
+    // React17からreactインポートが不要になったためoffにする
+    "react/react-in-jsx-scope": "off",
+    // importをアルファベット順に並べる
+    "import/order": [2, { "alphabetize": { "order": "asc" } }],
+    // no used, no-named-as-default, no-unresolvedはうざいのでoff
+    "@typescript-eslint/no-unused-vars": "off",
+    "import/no-named-as-default": "off",
+    "import/no-unresolved": "off",
+    // Emotionでエラーが出るため
+    "react/no-unknown-property": ["error", { "ignore": ["css"] }],
+    // any, namespaceも許可
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-namespace": "off"
+  }
+}

@@ -1,0 +1,53 @@
+
+<div id="toc" class="toc tnt-number toc-center tnt-number border-element"><input type="checkbox" class="toc-checkbox" id="toc-checkbox-241" checked><label class="toc-title" for="toc-checkbox-241">目次</label>
+  <div class="toc-content">
+  <ol class="toc-list open">
+    <li><a href="#toc1" tabindex="0">見出し１</a></li>
+    <li><a href="#toc2" tabindex="0">見出し２</a></li>
+  </ol>
+  </div>
+</div>
+
+<h2 id="toc1">見出し１</h2>
+
+<p><strong>これはテスト記事である・・・。</strong><br />
+
+<div class="wp-block-cocoon-blocks-balloon-ex-box speech-wrap sb-id-13 sbs-stn sbp-l sbis-cb cf block-box">
+<div class="speech-person">
+<figure class="speech-icon"><img decoding="async" class="speech-icon-image" src="https://wp-next-elekibear-content.netlify.app/wp-content/uploads/2019/04/face1.png" alt="マイケル"></figure>
+<div class="speech-name">マイケル</div>
+</div>
+<div class="speech-balloon">テスト
+</div>
+</div>
+
+<div class="wp-block-cocoon-blocks-balloon-ex-box speech-wrap sb-id-21 sbs-line sbp-r sbis-cb cf block-box">
+<div class="speech-person">
+<figure class="speech-icon"><img decoding="async" class="speech-icon-image" src="https://wp-next-elekibear-content.netlify.app/wp-content/uploads/2019/04/eleface1-2.png" alt="エレキベア"></figure>
+<div class="speech-name">エレキベア</div>
+</div>
+<div class="speech-balloon">テスト
+</div>
+</div>
+
+<h2 id="toc2">見出し２</h2>
+
+<div class="wp-block-cocoon-blocks-balloon-ex-box speech-wrap sb-id-13 sbs-stn sbp-l sbis-cb cf block-box">
+<div class="speech-person">
+<figure class="speech-icon"><img decoding="async" class="speech-icon-image" src="https://wp-next-elekibear-content.netlify.app/wp-content/uploads/2019/04/face3.png" alt="マイケル"></figure>
+<div class="speech-name">マイケル</div>
+</div>
+<div class="speech-balloon">テスト
+</div>
+</div>
+
+<div class="wp-block-cocoon-blocks-balloon-ex-box speech-wrap sb-id-21 sbs-line sbp-r sbis-cb cf block-box">
+<div class="speech-person">
+<figure class="speech-icon"><img decoding="async" class="speech-icon-image" src="https://wp-next-elekibear-content.netlify.app/wp-content/uploads/2019/04/eleface1-2.png" alt="エレキベア"></figure>
+<div class="speech-name">エレキベア</div>
+</div>
+<div class="speech-balloon">テスト
+</div>
+</div>
+
+<p><strong>【テスト】Text記事１ 〜完〜</strong></p>

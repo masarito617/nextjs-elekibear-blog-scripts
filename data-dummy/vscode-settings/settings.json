@@ -1,0 +1,13 @@
+{
+    "editor.formatOnSave": true, // ファイル保存時の自動フォーマット有効
+    "editor.defaultFormatter": "esbenp.prettier-vscode", // デフォルトフォーマッターをPrettierに指定
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    // Markdownの入力補完を有効にする
+    "emmet.excludeLanguages": [],
+    "emmet.includeLanguages": { "markdown": "html" },
+    "emmet.showSuggestionsAsSnippets": true,
+    "workspaceKeybindings.ElekibearBlogTask.enabled": true // keybindings.json のwhenに指定することでプロジェクトでのみ有効にする
+  }
+  

@@ -1,0 +1,10 @@
+# wordpressの旧URLを301リダイレクト
+# 200でrewritesにしたかったが、読み込みが遅かったため...
+
+# 固定記事 (個別対応)
+/molegoro_app /page/molegoro_app 301
+/molegoro_pp /page/molegoro_pp 301
+/madoriconvtool /tool/madoriconvtool 301
+
+# 投稿記事
+/:slug /post/:slug 301
