@@ -60,6 +60,17 @@ namespace WidgetSettings {
     '/category4',
     '/category5',
   ];
+
+  /**
+   * タグウィジェット
+   * 表示するタグの数
+   */
+  export const TagWidgetDisplayCount = 30;
+
+  /**
+   * Show More で追加するタグの数
+   */
+  export const TagWidgetShowMoreCount = 10;
 }
 
 export default WidgetSettings;

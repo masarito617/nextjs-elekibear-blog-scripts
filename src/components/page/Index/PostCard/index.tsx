@@ -1,7 +1,7 @@
 import { Theme, css, keyframes } from '@emotion/react';
 import Link from 'next/link';
 import { BiSolidTime } from 'react-icons/bi';
-import CustomImage from 'components/common/CustomImage';
+import ResizeImage from 'components/common/ResizeImage';
 import { lg, md, sm } from 'style/media';
 
 const moveFadeInKeyframes = keyframes`
@@ -128,8 +128,11 @@ const PostCard = (props: PostCardProps) => {
       <Link href={`/post/${props.slug}`}>
         <figure css={styleImageWrapper}>
           {/* <img src={props.src} alt="" css={styleImage} /> */}
-          <CustomImage
+          <ResizeImage
             src={props.src}
+            originalWidth={800}
+            originalHeight={600}
+            resizeWidth={320}
             alt=""
             addCss={styleImage}
             isShowLoading={true}

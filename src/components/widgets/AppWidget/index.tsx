@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 import Link from 'next/link';
 import SideWidgetBase from '../WidgetBase';
-import CustomResizeImage from 'components/common/CustomResizeImage';
+import ResizeImage from 'components/common/ResizeImage';
 import WidgetSettings from 'settings/WidgetSettings';
 import { md } from 'style/media';
 
@@ -68,11 +68,12 @@ const AppContent = (props: {
   return (
     <div css={styleAppInfoArea}>
       <div css={styleIconImageWrapper}>
-        <CustomResizeImage
+        <ResizeImage
           src={props.appIconImageUrl}
           alt=""
-          resizeHeight="112px"
-          resizeWidth="112px"
+          originalWidth={1024}
+          originalHeight={1024}
+          resizeHeight={112}
           addCss={styleIconImage}
           isShowLoading={true}
         />
@@ -82,17 +83,21 @@ const AppContent = (props: {
         <div css={styleSubText}>{props.appDetail}</div>
         <div css={styleStoreBadgeArea}>
           <a css={styleBadgeLink} href={props.appIosAppUrl}>
-            <CustomResizeImage
+            <ResizeImage
               src="https://wp-next-elekibear-content.netlify.app/wp-content/uploads/molegoro/store/badge-app-store-ja.svg"
               alt=""
-              resizeHeight="33px"
+              originalWidth={109}
+              originalHeight={40}
+              resizeHeight={27}
             />
           </a>
           <a css={styleBadgeLink} href={props.appAndroidAppUrl}>
-            <CustomResizeImage
+            <ResizeImage
               src="https://wp-next-elekibear-content.netlify.app/wp-content/uploads/molegoro/store/badge-google-play-ja.png"
               alt=""
-              resizeHeight="49.5px"
+              originalWidth={646}
+              originalHeight={250}
+              resizeHeight={39}
             />
           </a>
         </div>

@@ -1,6 +1,6 @@
 import { Theme, css } from '@emotion/react';
 import Link from 'next/link';
-import CustomResizeImage from 'components/common/CustomResizeImage';
+import ResizeImage from 'components/common/ResizeImage';
 import { md } from 'style/media';
 import { apiMst } from 'types/mst-api';
 
@@ -25,6 +25,8 @@ const styleImageWrapper = css`
   margin-right: 12px;
   width: 180px;
   height: 120px;
+  display: flex;
+  align-items: center;
 `;
 
 const styleIconImage = css`
@@ -72,11 +74,12 @@ const PostCardContentItem = (props: { post: apiMst.Post }) => {
     >
       <div css={styleRoot}>
         <div css={styleImageWrapper}>
-          <CustomResizeImage
+          <ResizeImage
             src={post.featuredImage}
             alt=""
-            resizeHeight={'120px'}
-            resizeWidth={'180px'}
+            originalWidth={800}
+            originalHeight={600}
+            resizeWidth={180}
             addCss={styleIconImage}
             isShowLoading={true}
           />

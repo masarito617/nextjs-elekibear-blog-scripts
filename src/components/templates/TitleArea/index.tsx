@@ -1,6 +1,7 @@
 import { Global, Theme, css, keyframes } from '@emotion/react';
 import { useEffect, useState } from 'react';
 import TitleAnimationComponent from './TitleAnimation';
+import ResizeImage from 'components/common/ResizeImage';
 import { TitleAreaUtil } from 'components/templates/TitleArea/TitleAreaUtil';
 import { md } from 'style/media';
 
@@ -59,7 +60,7 @@ const styleLogoImage = css`
   object-fit: contain;
   position: relative;
   max-width: 100%;
-  height: 'auto';
+  height: auto;
   width: '100%';
 `;
 
@@ -75,6 +76,7 @@ const styleLoadingWrapper = css`
 
 const styleLoadingImage = css`
   height: 100%;
+  width: auto;
 `;
 
 const styleLoadingFadeOut = css`
@@ -99,19 +101,25 @@ const TitleArea = () => {
       <div css={styleLogoWrapper}>
         {/** next/image だと表示切替が出来なかったためimgタグ固定 */}
         <div css={styleLoadingWrapper}>
-          <img
+          <ResizeImage
             id={TitleAreaUtil.titleLoadingId}
             src="/img/common/image_loading.gif"
             alt=""
-            css={styleLoadingImage}
+            originalWidth={400}
+            originalHeight={400}
+            resizeWidth={140}
+            addCss={styleLoadingImage}
           />
         </div>
         <div css={styleLogoImageWrapper}>
-          <img
+          <ResizeImage
             id={TitleAreaUtil.titleLogoImageId}
             src="/img/common/title_logo.png"
             alt=""
-            css={styleLogoImage}
+            originalWidth={841}
+            originalHeight={480}
+            resizeHeight={280}
+            addCss={styleLogoImage}
           />
         </div>
       </div>

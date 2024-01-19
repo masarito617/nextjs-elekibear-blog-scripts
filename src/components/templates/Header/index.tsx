@@ -1,7 +1,7 @@
 import { Theme, css } from '@emotion/react';
 import Link from 'next/link';
 import CategoryMenu from './CategoryMenu';
-import CustomResizeImage from 'components/common/CustomResizeImage';
+import ResizeImage from 'components/common/ResizeImage';
 import SiteSettings from 'settings/SiteSettings';
 import { lg } from 'style/media';
 import { apiMst } from 'types/mst-api';
@@ -55,11 +55,12 @@ const Header = (props: {
                 }
               }}
             >
-              <CustomResizeImage
+              <ResizeImage
                 src="/img/common/header_home_icon.png"
                 alt=""
-                // resizeHeight='24px'
-                resizeWidth="92px"
+                originalWidth={556}
+                originalHeight={163}
+                resizeWidth={92}
                 addCss={css`
                   padding-left: 24px;
                 `}

@@ -1,6 +1,6 @@
 import { css, Theme } from '@emotion/react';
 import SideWidgetBase from '../WidgetBase';
-import CustomResizeImage from 'components/common/CustomResizeImage';
+import ResizeImage from 'components/common/ResizeImage';
 import WidgetSettings from 'settings/WidgetSettings';
 
 const styleRoot = css`
@@ -90,15 +90,19 @@ const CharacterContentL = (props: {
   name: string;
   detail: string;
   imageUrl: string;
+  imageWidth: number;
+  imageHeight: number;
 }) => {
   return (
     <div css={styleContentL}>
       <div css={styleRectL}></div>
       <div css={styleImageWrapperL}>
-        <CustomResizeImage
+        <ResizeImage
           src={props.imageUrl}
-          alt={''}
-          resizeHeight={'180px'}
+          alt={props.name}
+          originalWidth={props.imageWidth}
+          originalHeight={props.imageHeight}
+          resizeHeight={180}
           priority={true}
         />
       </div>
@@ -114,15 +118,19 @@ const CharacterContentR = (props: {
   name: string;
   detail: string;
   imageUrl: string;
+  imageWidth: number;
+  imageHeight: number;
 }) => {
   return (
     <div css={styleContentR}>
       <div css={styleRectR}></div>
       <div css={styleImageWrapperR}>
-        <CustomResizeImage
+        <ResizeImage
           src={props.imageUrl}
-          alt={''}
-          resizeHeight={'180px'}
+          alt={props.name}
+          originalWidth={props.imageWidth}
+          originalHeight={props.imageHeight}
+          resizeHeight={180}
           priority={true}
         />
       </div>
@@ -155,6 +163,8 @@ const CharactersWidget = () => {
                 name={characterInfo.name}
                 detail={characterInfo.detail}
                 imageUrl={characterInfo.imageUrl}
+                imageWidth={characterInfo.imageWidth}
+                imageHeight={characterInfo.imageHeight}
               />
             );
           } else {
@@ -164,6 +174,8 @@ const CharactersWidget = () => {
                 name={characterInfo.name}
                 detail={characterInfo.detail}
                 imageUrl={characterInfo.imageUrl}
+                imageWidth={characterInfo.imageWidth}
+                imageHeight={characterInfo.imageHeight}
               />
             );
           }

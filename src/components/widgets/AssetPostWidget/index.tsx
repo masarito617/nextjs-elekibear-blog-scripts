@@ -1,7 +1,7 @@
 import { css, Theme } from '@emotion/react';
 import Link from 'next/link';
 import SideWidgetBase from '../WidgetBase';
-import CustomResizeImage from 'components/common/CustomResizeImage';
+import ResizeImage from 'components/common/ResizeImage';
 import WidgetSettings from 'settings/WidgetSettings';
 import { md } from 'style/media';
 
@@ -57,11 +57,12 @@ const AssetPostContent = (props: {
     <Link css={styleAssetContentLink} href={props.postUrl}>
       <div css={styleAssetsContent}>
         <div css={styleAssetsIconImageWrapper}>
-          <CustomResizeImage
+          <ResizeImage
             src={props.imageUrl}
             alt=""
-            resizeHeight="97.5px"
-            resizeWidth="130px"
+            originalWidth={800}
+            originalHeight={600}
+            resizeWidth={130}
             addCss={styleAssetsIconImage}
             isShowLoading={true}
           />
